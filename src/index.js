@@ -1,5 +1,8 @@
 import React from 'react'
 import {render} from 'react-dom'
 import Article from './article'
+import { articles } from './fixtures'
 
-render(<Article />,document.getElementById('app'));
+const article = articles[0];
+
+render(<Article article = { article } />,document.getElementById('app'));
